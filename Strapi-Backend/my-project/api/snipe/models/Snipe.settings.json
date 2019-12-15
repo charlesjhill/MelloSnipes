@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "snipes",
+  "info": {
+    "name": "snipe",
+    "description": "An instance of one user sniping another"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "time": {
+      "type": "date",
+      "required": true
+    },
+    "sniper": {
+      "model": "user",
+      "via": "kills",
+      "plugin": "users-permissions"
+    },
+    "target": {
+      "model": "user",
+      "via": "deaths",
+      "plugin": "users-permissions"
+    },
+    "capture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

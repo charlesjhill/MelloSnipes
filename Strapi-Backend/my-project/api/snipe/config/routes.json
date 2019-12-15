@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/snipes",
+      "handler": "Snipe.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/snipes/count",
+      "handler": "Snipe.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/snipes/:id",
+      "handler": "Snipe.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/snipes",
+      "handler": "Snipe.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/snipes/:id",
+      "handler": "Snipe.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/snipes/:id",
+      "handler": "Snipe.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
