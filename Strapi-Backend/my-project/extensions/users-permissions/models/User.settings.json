@@ -1,6 +1,7 @@
 {
-  "collectionName": "users-permissions_user",
+  "kind": "collectionType",
   "connection": "default",
+  "collectionName": "users-permissions_user",
   "info": {
     "name": "user",
     "description": ""
@@ -57,12 +58,12 @@
       "configurable": false
     },
     "kills": {
-      "collection": "snipe",
-      "via": "sniper"
+      "via": "sniper",
+      "collection": "snipe"
     },
     "deaths": {
-      "collection": "snipe",
-      "via": "target"
+      "via": "target",
+      "collection": "snipe"
     }
   }
 }
